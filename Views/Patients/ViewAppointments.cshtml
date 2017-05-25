@@ -1,0 +1,81 @@
+﻿@model proyectoFinalSI.PatientAppointment
+
+
+
+<h2>Details</h2>
+
+<div>
+    <h4>Appointment</h4>
+
+
+
+
+    <table class="table">
+        <th>
+            Patient Name
+            @*@Html.DisplayNameFor(model => model.patients.firstName)*@
+        </th>
+        <th>
+            Doctor Name
+            @*@Html.DisplayNameFor(model => model.patients.firstName)*@
+        </th>
+        <th>
+            Status
+            @*@Html.DisplayNameFor(model => model.patients.firstName)*@
+        </th>
+        <th>
+            Date
+            @*@Html.DisplayNameFor(model => model.patients.firstName)*@
+        </th>
+        <th>
+            Description
+            @*@Html.DisplayNameFor(model => model.patients.firstName)*@
+        </th>
+
+ 
+
+            <tr>
+                <td>
+
+                    @Html.DisplayFor(model => model.patients.firstName)
+                </td>
+
+                <td>
+
+                  @Html.DisplayFor(model => model.appointment.status)
+                </td>
+
+                <td>
+
+                 @Html.DisplayFor(model => model.appointmentList)
+                </td>
+
+                <td>
+
+                    @Html.DisplayFor(model => model.appointmentList)
+                </td>
+
+                <td>
+
+                  @Html.DisplayFor(model => model.appointmentList)
+                </td>
+               
+                <td>
+                   @* @Html.DisplayFor(modelItem => item.lastName)*@
+                </td>
+                <td>
+                   @* @Html.DisplayFor(modelItem => item.userName)*@
+                </td>
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.password)
+                    </td>*@
+                <td>
+                 @*   @Html.DisplayFor(modelItem => item.email)*@
+                </td>
+            </tr>
+ 
+
+</table>
+</div>
+
+

@@ -1,0 +1,137 @@
+﻿
+
+@model proyectoFinalSI.PatientAppointment
+    
+@{
+    ViewBag.Title = "Doctor Profile";
+}
+
+<h2>Doctor Profile</h2>
+
+<div>
+    <h4>Doctor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+
+            Speciality
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doctors.speciality)
+        </dd>
+
+        <dt>
+            First Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doctors.firstName)
+        </dd>
+
+        <dt>
+            Last Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doctors.lastName)
+        </dd>
+
+        <dt>
+            Username
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doctors.userName)
+        </dd>
+
+        <dt>
+            Password
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doctors.password)
+        </dd>
+
+        <dt>
+            Email
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doctors.email)
+        </dd>
+
+    </dl>
+</div>
+
+<b><h4>Your Patients</h4></b>
+
+@if (Model.patientsPerDoctorList.Count == 0)
+{
+    <h4>You dont have patients for the moment</h4>
+}
+else
+{
+<table class="table">
+    <tr>
+        @*<th>
+            Doctor
+            @Html.DisplayNameFor(model => model.doctor.firstName)
+        </th>*@
+        <th>
+            Patient's Name
+            @*@Html.DisplayNameFor(model => model.patient.firstName)*@
+        </th>
+        <th>
+            Appointment Status
+            @*@Html.DisplayNameFor(model => model.status)*@
+        </th>
+        <th>
+            Appointment Date
+            @*@Html.DisplayNameFor(model => model.date)*@
+        </th>
+        <th>
+            Description
+            @*@Html.DisplayNameFor(model => model.description)*@
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.patientsPerDoctorList)
+    {
+        <tr>
+            @*<td>
+                Dr. @Html.DisplayFor(modelItem => item.doctor.firstName) @Html.DisplayFor(modelItem => item.doctor.lastName)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.patient.firstName) @Html.DisplayFor(modelItem => item.patient.lastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.description)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.appointmentId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.appointmentId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.appointmentId })
+            </td>
+        </tr>
+    }
+
+</table>
+}
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.doctors.doctorId }) |
+    @Html.ActionLink("Back to List", "Index") |
+    @Html.ActionLink("Patients", "DoctorsPatients", "Appointments", new { id = Model.doctors.doctorId }, null)
+    <button type="button" class="btn btn-primary" onclick="calendarFunction()">View Availability</button>
+</p>
+
+
+
+

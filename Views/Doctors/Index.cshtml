@@ -1,0 +1,75 @@
+﻿@model IEnumerable<proyectoFinalSI.Models.Doctor>
+
+@{
+    ViewBag.Title = "Doctors";
+}
+
+<h2>DOCTORS</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Specialty
+            @*@Html.DisplayNameFor(model => model.speciality)*@
+        </th>
+        <th>
+            First Name
+            @*@Html.DisplayNameFor(model => model.firstName)*@
+        </th>
+        <th>
+            Last Name
+           @* @Html.DisplayNameFor(model => model.lastName)*@
+        </th>
+        <th>
+            Username
+           @* @Html.DisplayNameFor(model => model.userName)*@
+        </th>
+        <th>
+            Email
+           @* @Html.DisplayNameFor(model => model.email)*@
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.speciality)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.firstName)
+            </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.userName)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.password)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.doctorId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.doctorId }) |
+            @Html.ActionLink("Profile", "Details", new { id = item.doctorId }) 
+            <button type="button" onclick="myFunction" class="btn btn-primary">Patients</button>
+
+            
+         
+        </td>
+    </tr>
+}
+
+</table>
+
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
