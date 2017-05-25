@@ -47,15 +47,15 @@ namespace proyectoFinalSI.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            var x = new PatientAppointment();
-            x.patients = db.Patients.Find(id);
-            x.appointmentList = db.Appointments.Where(a => a.patientId == id).Include(a => a.doctor).Include(a => a.patient).ToList();
+            var y = new PatientAppointment();
+            y.patients = db.Patients.Find(id);
+            y.appointmentList = db.Appointments.Where(a => a.patientId == id).Include(a => a.doctor).Include(a => a.patient).ToList();
             //Patient patient = db.Patients.Find(id);
-            if (x == null)
+            if (y== null)
             {
                 return HttpNotFound();
             }
-            return View(x);
+            return View(y);
         }
 
 
