@@ -175,6 +175,10 @@
     <Compile Include="Migrations\201705120115362_thirdmigration.Designer.cs">
       <DependentUpon>201705120115362_thirdmigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705272250153_migra.cs" />
+    <Compile Include="Migrations\201705272250153_migra.Designer.cs">
+      <DependentUpon>201705272250153_migra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\citappDb.cs" />
@@ -263,6 +267,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705120115362_thirdmigration.resx">
       <DependentUpon>201705120115362_thirdmigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705272250153_migra.resx">
+      <DependentUpon>201705272250153_migra.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
