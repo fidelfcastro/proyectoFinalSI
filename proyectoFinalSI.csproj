@@ -80,6 +80,12 @@
       <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -154,11 +160,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AppointmentsController.cs" />
     <Compile Include="Controllers\DoctorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\PatientsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -179,11 +187,16 @@
     <Compile Include="Migrations\201705272250153_migra.Designer.cs">
       <DependentUpon>201705272250153_migra.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706040022597_migrawhatt.cs" />
+    <Compile Include="Migrations\201706040022597_migrawhatt.Designer.cs">
+      <DependentUpon>201706040022597_migrawhatt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\citappDb.cs" />
     <Compile Include="Models\Doctor.cs" />
     <Compile Include="Models\History.cs" />
+    <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Patient.cs" />
     <Compile Include="PatientAppointment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -246,6 +259,8 @@
     <Content Include="Views\Patients\ViewAppointments.cshtml" />
     <Content Include="Views\Appointments\AppointmentPerPatient.cshtml" />
     <Content Include="Views\Appointments\DoctorsPatients.cshtml" />
+    <Content Include="Views\Admin\AdminLogin.cshtml" />
+    <Content Include="Views\Admin\AdminIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -270,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705272250153_migra.resx">
       <DependentUpon>201705272250153_migra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706040022597_migrawhatt.resx">
+      <DependentUpon>201706040022597_migrawhatt.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

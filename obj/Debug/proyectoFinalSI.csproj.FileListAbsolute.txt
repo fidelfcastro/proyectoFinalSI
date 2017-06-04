@@ -121,3 +121,8 @@ C:\Users\Felipe\Documents\GitHub\proyectoFinalSI\obj\Debug\proyectoFinalSI.cspro
 C:\Users\Felipe\Documents\GitHub\proyectoFinalSI\obj\Debug\proyectoFinalSI.dll
 C:\Users\Felipe\Documents\GitHub\proyectoFinalSI\obj\Debug\proyectoFinalSI.pdb
 C:\Users\Felipe\Documents\GitHub\proyectoFinalSI\obj\Debug\proyectoFinalSI.Migrations.migra.resources
+C:\Users\Felipe\Documents\GitHub\proyectoFinalSI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Felipe\Documents\GitHub\proyectoFinalSI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Felipe\Documents\GitHub\proyectoFinalSI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Felipe\Documents\GitHub\proyectoFinalSI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Felipe\Documents\GitHub\proyectoFinalSI\obj\Debug\proyectoFinalSI.Migrations.migrawhatt.resources
