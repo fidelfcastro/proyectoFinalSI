@@ -13,6 +13,7 @@
         <h2> Patient Login</h2>
         <div class="container">
             <form>
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                 <div class="form-group">
                     <label>Username:</label>
                     <input type="text" name="username" class="form-control">

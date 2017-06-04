@@ -1,0 +1,36 @@
+﻿@model proyectoFinalSI.Models.Admin
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+
+@* @using (Html.BeginForm("Check", "AdminController", FormMethod.Post)) { *@
+    <div class="row">
+        <div class="col-md-8 col-md-offset-5">
+            <h2> EMPLOYEE LOGIN</h2>
+            <div class="container">
+                <form>
+                <div class="form-group">
+                     <label>User:</label>
+                     <input type="text" name="user" class="form-control">
+
+                </div>
+                <div class="form-group">
+                    <label>Password:</label>
+                    <input type="password" id="password" name="password" class="form-control" data-toggle="password">
+                </div>
+                <div class="form-group">
+                
+                  
+                        <!-- MANDAR CON EL BOTON AL ACTIONRESULT METODO LLAMADO CHECK. HOW THE FUCK?-->
+                        <button type="submit" class="btn btn-success" style="background-color:darkslateblue" value="Check" >Submit</button>
+
+                       
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>

@@ -10,6 +10,7 @@ using proyectoFinalSI.Models;
 
 namespace proyectoFinalSI.Controllers
 {
+    [Authorize]
     public class PatientsController : Controller
     {
         private citappDb db = new citappDb();
@@ -32,7 +33,7 @@ namespace proyectoFinalSI.Controllers
         //    {
         //        pa.appointment = db.Appointments.Find(n.appointmentId);
         //    }
-            
+
         //    //var appointments = db.Appointments.Include(a => a.doctor).Include(a => a.patient);
 
         //    pa.patients = db.Patients.Find(id);
@@ -41,6 +42,7 @@ namespace proyectoFinalSI.Controllers
         //}
 
         // GET: Patients/Details/5
+        [Authorize(Roles = "Admin, Technician")]
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -55,9 +57,11 @@ namespace proyectoFinalSI.Controllers
             {
                 return HttpNotFound();
             }
+
             return View(y);
         }
 
+        
 
         // GET: Patients/Create
         public ActionResult Create()
@@ -65,6 +69,7 @@ namespace proyectoFinalSI.Controllers
             return View();
         }
 
+        
         // POST: Patients/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.

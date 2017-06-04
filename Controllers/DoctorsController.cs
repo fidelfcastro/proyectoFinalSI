@@ -10,6 +10,7 @@ using proyectoFinalSI.Models;
 
 namespace proyectoFinalSI.Controllers
 {
+    [Authorize]
     public class DoctorsController : Controller
     {
         private citappDb db = new citappDb();

@@ -121,6 +121,7 @@ C:\Users\Felipe\Documents\GitHub\proyectoFinalSI\obj\Debug\proyectoFinalSI.cspro
 C:\Users\Felipe\Documents\GitHub\proyectoFinalSI\obj\Debug\proyectoFinalSI.dll
 C:\Users\Felipe\Documents\GitHub\proyectoFinalSI\obj\Debug\proyectoFinalSI.pdb
 C:\Users\Felipe\Documents\GitHub\proyectoFinalSI\obj\Debug\proyectoFinalSI.Migrations.migra.resources
+<<<<<<< HEAD
 C:\Users\Rafael\Documents\GitHub\proyectoFinalSI\bin\ApplicationInsights.config
 C:\Users\Rafael\Documents\GitHub\proyectoFinalSI\bin\roslyn\csc.exe
 C:\Users\Rafael\Documents\GitHub\proyectoFinalSI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -183,3 +184,10 @@ C:\Users\Rafael\Documents\GitHub\proyectoFinalSI\obj\Debug\proyectoFinalSI.Migra
 C:\Users\Rafael\Documents\GitHub\proyectoFinalSI\obj\Debug\proyectoFinalSI.csproj.GenerateResource.Cache
 C:\Users\Rafael\Documents\GitHub\proyectoFinalSI\obj\Debug\proyectoFinalSI.dll
 C:\Users\Rafael\Documents\GitHub\proyectoFinalSI\obj\Debug\proyectoFinalSI.pdb
+=======
+C:\Users\Felipe\Documents\GitHub\proyectoFinalSI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Felipe\Documents\GitHub\proyectoFinalSI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Felipe\Documents\GitHub\proyectoFinalSI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Felipe\Documents\GitHub\proyectoFinalSI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Felipe\Documents\GitHub\proyectoFinalSI\obj\Debug\proyectoFinalSI.Migrations.migrawhatt.resources
+>>>>>>> 5e85e172effc4a297de3d9e12bfbb68fbc3cb4e2

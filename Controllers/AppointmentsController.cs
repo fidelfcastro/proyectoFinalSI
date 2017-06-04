@@ -10,6 +10,7 @@ using proyectoFinalSI.Models;
 
 namespace proyectoFinalSI.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class AppointmentsController : Controller
     {
       
