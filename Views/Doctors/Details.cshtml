@@ -99,12 +99,24 @@ else
 
     @foreach (var item in Model.patientsPerDoctorList)
     {
+   
+            
+        
         <tr>
             @*<td>
                 Dr. @Html.DisplayFor(modelItem => item.doctor.firstName) @Html.DisplayFor(modelItem => item.doctor.lastName)
             </td>*@
             <td>
                 @Html.DisplayFor(modelItem => item.patient.firstName) @Html.DisplayFor(modelItem => item.patient.lastName)
+
+                <p>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => item.description, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => item.description, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </p>
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.status)
@@ -115,11 +127,7 @@ else
             <td>
                 @Html.DisplayFor(modelItem => item.description)
             </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.appointmentId }) |
-                @Html.ActionLink("Details", "Details", new { id = item.appointmentId }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.appointmentId })
-            </td>
+           
         </tr>
     }
 
@@ -127,10 +135,15 @@ else
 }
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.doctors.doctorId }) |
-    @Html.ActionLink("Back to List", "Index") |
-    @Html.ActionLink("Patients", "DoctorsPatients", "Appointments", new { id = Model.doctors.doctorId }, null)
+    @Html.ActionLink("Back to List", "Index") 
     <button type="button" class="btn btn-primary" onclick="calendarFunction()">View Availability</button>
 </p>
+
+
+
+
+
+
 
 
 

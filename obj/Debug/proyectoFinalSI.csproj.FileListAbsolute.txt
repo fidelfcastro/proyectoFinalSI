@@ -59,3 +59,4 @@ c:\users\fidel\onedrive\documents\visual studio 2015\Projects\proyectoFinalSI\pr
 c:\users\fidel\onedrive\documents\visual studio 2015\Projects\proyectoFinalSI\proyectoFinalSI\obj\Debug\proyectoFinalSI.csproj.GenerateResource.Cache
 C:\Users\fidel\onedrive\documents\visual studio 2015\Projects\proyectoFinalSI\proyectoFinalSI\obj\Debug\proyectoFinalSI.Migrations.secondMigration.resources
 C:\Users\fidel\onedrive\documents\visual studio 2015\Projects\proyectoFinalSI\proyectoFinalSI\obj\Debug\proyectoFinalSI.Migrations.thirdmigration.resources
+C:\Users\fidel\onedrive\documents\visual studio 2015\Projects\proyectoFinalSI\proyectoFinalSI\obj\Debug\proyectoFinalSI.Migrations.recipeToAppointmentMigration.resources

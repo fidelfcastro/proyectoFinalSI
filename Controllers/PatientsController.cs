@@ -58,7 +58,6 @@ namespace proyectoFinalSI.Controllers
             return View(y);
         }
 
-
         // GET: Patients/Create
         public ActionResult Create()
         {

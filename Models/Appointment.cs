@@ -15,6 +15,7 @@ namespace proyectoFinalSI.Models
         public string status { get; set; }
         public DateTime date { get; set; }
         public string description { get; set; }
+        public string recipe { get; set; }
      
     }
 }
